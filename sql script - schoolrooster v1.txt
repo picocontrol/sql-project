@@ -1,0 +1,65 @@
+CREATE DATABASE lokaal;
+
+USE lokaal
+
+CREATE TABLE lokaal (
+lokaal_id int NOT NULL AUTO_INCREMENT
+lokaalnaam VARCHAR(20)
+PRIMARY KEY (lokaal_id)
+);
+
+INSERT INTO lokaal (lokaalnaam)
+VALUES ('D100', 'D110', 'E120', 'E121','F233');
+
+CREATE DATABASE klassen;
+
+USE klassen
+
+CREATE TABLE klassen (
+klas_id int NOT NULL AUTO_INCREMENT
+klasnaam VARCHAR(20)
+PRIMARY KEY (klas_id)
+);
+
+INSERT INTO klassen (klasnaam)
+VALUES ('AH2B', 'A3A', 'AH1C', 'A5B','AH1B');
+
+CREATE DATABASE leraren;
+
+USE leraren
+
+CREATE TABLE leraren (
+leraar_id int NOT NULL AUTO_INCREMENT
+leraarnaam VARCHAR(40)
+PRIMARY KEY (leraar_id)
+);
+
+INSERT INTO leraren (leraarnaam)
+VALUES ('Hoef', 'Arends', 'Wilpstra', 'Jansen','Hartman');
+
+CREATE DATABASE vakken;
+
+USE vakken
+
+CREATE TABLE vakken (
+vak_id int NOT NULL AUTO_INCREMENT
+vaknaam VARCHAR(30)
+PRIMARY KEY (vak_id)
+);
+
+INSERT INTO vakken (vaknaam)
+VALUES ('Wiskunde', 'Engels', 'Nederlands', 'Programmeren','Tekenen', 'Muziek');
+
+CREATE DATABASE tijden;
+
+USE tijden
+
+CREATE TABLE tijden (
+tijd_id int NOT NULL AUTO_INCREMENT
+tijdstip VarChar(20)
+PRIMARY KEY (tijd_id)
+);
+
+INSERT INTO tijden (tijdstip)
+VALUES ('8 u', '9u', '10u', '11u','12u', '13u');
+
